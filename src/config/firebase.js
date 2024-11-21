@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 // Configuración Firebase 
 const firebaseConfig = {
@@ -13,9 +14,11 @@ const firebaseConfig = {
 };
 
 // Inicializar Firebase
+
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
+const auth = getAuth(app);
 
 // Agregado de nuevo libro a FireStore
 const addBook = async (book) => {
@@ -40,4 +43,4 @@ fetch ('https://6738bb254eb22e24fca8cde6.mockapi.io/argentinianbooks')
          console.error("Error en fetching de datos",error)
     });
 
-export default db;
+export {auth, db};

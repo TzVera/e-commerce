@@ -58,13 +58,12 @@ Desarrollar un ecommerce con las siguientes paginas:
 Se requiere de variables de entorno para el funcionamiento de la página web clonada. Para ello, seguir estos pasos:
 
 1. Con una cuenta de Google, ingresar a Firebase. Clickear en "Go to console" para crear un proyecto de Firebase.
-![alt text](image-1.png)
+![alt text](src/assets/readme/console.png)
 
-2. Luego, se activa la autenticación (Authentication), y la base de datos (Cloud Firestore).
-![alt text](image-2.png)
-
-3. A continuación, crear un archivo .env en la raíz del proyecto. 
-![alt text](image-3.png)
+1. Luego, se activa la autenticación (Authentication), y la base de datos (Cloud Firestore).
+![alt text](src/assets/readme/authandcloud.png)
+1. A continuación, crear un archivo .env en la raíz del proyecto. 
+![alt text](src/assets/readme/env.png)
 
 Agregar en el archivo las credenciales de la siguiente manera, reemplazando los valores de la derecha que poseen en su nombre la palabra "propia" :
 
@@ -80,11 +79,11 @@ Agregar en el archivo las credenciales de la siguiente manera, reemplazando los 
 
  La información de las credenciales propias se consiguen en "Configuración del Proyecto" (Project Settings) (Simbolo de engranaje, lado derecho de "Descripción general" (Project Overview)).
 
- ![alt text](image-4.png)
- 
+ ![alt text](src/assets/readme/projectsettings.png)
+
  En la página se realiza scroll hacia abajo, y haciendo click en el simbolo </>, se accede a "Agrega Firebase a tu aplicación web" (Add Firebase to your web app), donde se registra la app. 
 
- ![alt text](image-5.png)
+ ![alt text](src/assets/readme/addwebapp.png)
 
  Luego del registro se consiguen las credenciales dentro de const firebaseConfig = {(...)}.
 

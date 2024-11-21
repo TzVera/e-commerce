@@ -22,10 +22,11 @@ export default function Product(){
 
     return (
         <main className='product_main'>
+
         {error && <h1 className="load_message" >Error: {error} </h1> }
         {loading && <h1 className="load_message" >Cargando...</h1> }
-            
-            <div className="product_details">
+        
+        {!loading && <div className="product_details">
             <img className="product_image" src={books.image} alt={books.title}></img>
             <h2 className="product_h2">PRODUCTO {productId}</h2>
             <h3 className="product_h3">Nombre: {books.title}</h3>
@@ -40,10 +41,9 @@ export default function Product(){
             <h3 className="product_h3">Precio: ${books.price}</h3>
             <h3 className="product_h3">Número de referencia único: {books.sku}</h3>
             <h3 className="product_h3">Stock: {books.stock}</h3>
-
             <Return />
-            
-            </div>
+        </div>
+        }
         </main>
     )
 }

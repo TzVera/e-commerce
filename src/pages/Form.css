@@ -81,3 +81,17 @@ input {
     color:black;
 }
 
+.load_message {
+    position: relative;
+    padding: 40px;
+    margin-top: 16%;
+    margin-bottom: 1%;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    border-block: 5px solid grey;
+    border-inline: 10px solid silver;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 23px;
+    color: grey;
+}

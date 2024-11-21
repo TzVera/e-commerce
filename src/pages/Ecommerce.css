@@ -1,15 +1,5 @@
 /* CSS página principal E-Commerce */
 
-.ecommerce_main{
-    max-width: 100%;
-    height: 1200px;
-    background: url(../assets/library_background.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    object-fit: contain;
-}
-
 .ecommerce_h1{
     background: rgba(255,248,231,0.879);
     backdrop-filter: blur(16px) saturate(120%);
