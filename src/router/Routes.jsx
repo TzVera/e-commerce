@@ -6,7 +6,7 @@ import {createBrowserRouter} from "react-router-dom"
 // Componentes
 import App from '../App'
 import Error from '../components/elements/Error'
-import Register from '../Pages/Register'
+import Register from '../pages/Register'
 import Login from '../Pages/Login'
 import Ecommerce from '../pages/Ecommerce'
 import Product from '../Pages/Product'
